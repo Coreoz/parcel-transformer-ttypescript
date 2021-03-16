@@ -1,6 +1,6 @@
 {
   "name": "parcel-transformer-ttypescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A parcel v2 TypeScript transformer to use ttypescript",
   "author": "Aurélien Manteaux <amanteaux@coreoz.com> (https://coreoz.com)",
   "repository": "https://github.com/coreoz/parcel-transformer-ttypescript",
@@ -22,7 +22,9 @@
   },
   "release-it": {
     "hooks": {
-      "before:init": ["npm run prepare-release"]
+      "before:init": [
+        "npm run prepare-release"
+      ]
     }
   },
   "main": "build/cjs/TtscTransformer.js",
