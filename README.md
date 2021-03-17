@@ -6,7 +6,11 @@ This enables to use easily [custom TypeScript transformers](https://dev.doctorev
 
 Usage
 -----
-Inside the `.parcelrc` file, reference the transformer:
+Install the dependency:
+- Yarn:`yarn add -D parcel-transformer-ttypescript`
+- or NPM: `npm install parcel-transformer-ttypescript --save-dev`
+
+Then inside the `.parcelrc` file, reference the transformer:
 ```json
 {
   "extends": "@parcel/config-default",
