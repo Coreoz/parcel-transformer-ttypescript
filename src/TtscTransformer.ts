@@ -4,7 +4,7 @@ import typescript from 'ttypescript';
 
 const TtscTransformer = new Transformer({
   async loadConfig({config, options}) {
-    await loadTSConfig(config, options);
+    return await loadTSConfig(config, options);
   },
 
   async transform({asset, config}) {
