@@ -18,7 +18,7 @@ const TtscTransformer = new Transformer({
            // React is the default. Users can override this by supplying their own tsconfig,
            // which many TypeScript users will already have for typechecking, etc.
            jsx: typescript.JsxEmit.React,
-           ...config,
+           ...(config as object),
            // Always emit output
            noEmit: false,
            // Don't compile ES `import`s -- scope hoisting prefers them and they will
